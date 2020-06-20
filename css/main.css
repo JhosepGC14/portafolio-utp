@@ -1,0 +1,147 @@
+:root {
+  --bluedark: #002e39;
+  --white: #ffffff;
+}
+
+header {
+  background: var(--bluedark);
+}
+
+.bg_dark {
+  background: var(--bluedark);
+  width: 75%;
+  margin: auto;
+}
+
+.bg_dark a {
+  color: var(--white);
+}
+
+.aboutme {
+  width: 75%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.container_img {
+  width: 25%;
+}
+
+.container_img figure {
+  margin: 0;
+}
+
+.container_img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid var(--bluedark);
+}
+
+.container_description {
+  width: 70%;
+  padding: 0px 0px 0px 50px;
+}
+
+.d_flex {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.d_flex_bet {
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.d_flex_around {
+  justify-content: space-around;
+  width: 100%;
+}
+
+.container_card {
+  width: 30%;
+  padding: 20px;
+  transition: all 0.5s;
+}
+
+.container_card:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+.container_card img {
+  width: 100%;
+}
+
+.text_card {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+footer {
+  margin: 50px 0px 0px 0px;
+  background: var(--bluedark);
+  height: 86px;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+@media (max-width: 1024px) {
+  .bg_dark {
+    width: 85%;
+  }
+  .aboutme {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg_dark {
+    width: 90%;
+  }
+  .aboutme {
+    width: 90%;
+  }
+
+  .d_flex {
+    flex-direction: column;
+  }
+
+  .container_description {
+    width: 90%;
+    padding: 0px;
+  }
+
+  .container_img {
+    margin-bottom: 30px;
+  }
+
+  .container_card {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 660px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .container_img {
+    width: 50%;
+  }
+}
